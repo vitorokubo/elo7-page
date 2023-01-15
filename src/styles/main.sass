@@ -1,0 +1,42 @@
+@use 'variables'
+
+:root
+    /*font-size 1rem = 10px para font-size 62.5%*/
+    font-size: 62.5%
+    line-height: 24px
+    font-weight: 400
+
+*
+    padding: 0px
+    margin: 0px
+    font-family: variables.$font-stack, sans-serif
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+    -webkit-text-size-adjust: 100%
+    -webkit-font-smoothing: antialiased
+
+body
+    width: 100vw
+    text-align: center
+
+img
+    display: block
+    width: 100%
+    height: auto
+    padding: 1rem
+
+h1
+    font-size: 6rem
+    color: variables.$h1-color
+
+h2
+    font-size: 2.4rem
+    font-weight: 700
+    color: variables.$text-color
+
+p
+    font-size: 2rem
+    font-weight: 400
+    color: variables.$text-color
