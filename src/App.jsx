@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import HeroBanner from '@pages/herobanner'
 import TeamSection from '@pages/teamsection'
 import './styles/components/App.sass'
 import AboutUs from '@pages/aboutus'
+import Jobs from '@pages/jobvacancies'
 
 function App() {
     return (
@@ -13,6 +13,7 @@ function App() {
             <main>
                 <TeamSection />
                 <AboutUs />
+                <Jobs />
             </main>
             <footer></footer>
         </div>
