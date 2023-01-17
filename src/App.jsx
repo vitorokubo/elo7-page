@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import HeroBanner from './pages/job-page/herobanner/HeroBanner'
-import TeamSection from './pages/job-page/teamsection/Teamsection'
+import HeroBanner from '@pages/herobanner'
+import TeamSection from '@pages/teamsection'
 import './styles/components/App.sass'
+import AboutUs from '@pages/aboutus'
 
 function App() {
-    const [count, setCount] = useState(0)
-
     return (
         <div className="App">
             <header>
@@ -13,6 +12,7 @@ function App() {
             </header>
             <main>
                 <TeamSection />
+                <AboutUs />
             </main>
             <footer></footer>
         </div>

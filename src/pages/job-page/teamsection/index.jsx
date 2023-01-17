@@ -1,9 +1,9 @@
-import '../../../styles/components/TeamSection.sass'
-import placeholder_video from '../../../images/placeholder-video.png'
-import beatriz from '../../../images/beatriz.png'
-import camila from '../../../images/camila.png'
-import david from '../../../images/david.png'
-import guto from '../../../images/guto.png'
+import '@components/TeamSection.sass'
+import placeholder_video from '@images/placeholder-video.png'
+import beatriz from '@images/beatriz.png'
+import camila from '@images/camila.png'
+import david from '@images/david.png'
+import guto from '@images/guto.png'
 
 export default function TeamSection() {
     return (
