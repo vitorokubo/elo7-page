@@ -49,7 +49,7 @@ export default function AboutUs() {
             </div>
             <div className="link">
                 <hr />
-                <a href="_blank">Saiba mais »</a>
+                <a href="#">Saiba mais »</a>
             </div>
         </section>
     )

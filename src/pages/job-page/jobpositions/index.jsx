@@ -28,7 +28,7 @@ export default function JobPositions() {
             setError('Oops tivemos um problema ;( , tente novamente mais tarde')
         } finally {
             /*Foi setado uma função de timeout para demonstrar o efeito de carregamento(loading)*/
-            setTimeout(() => setLoading(false), 900)
+            setTimeout(() => setLoading(false), 3000)
         }
     }
     useEffect(() => {
@@ -56,7 +56,7 @@ export default function JobPositions() {
     const renderLoading = () => {
         if (loading) {
             return (
-                <div>
+                <div className="spinner">
                     <img src={Spinner} alt="carregando" />
                 </div>
             )

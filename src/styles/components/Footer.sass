@@ -16,19 +16,32 @@
         max-width: 980px
         margin: auto
         padding-inline: 30px
+
+.about
+
+    ul
+        list-style: none
+    h3
+        color: variables.$bg-color-primary
+    a
+        color: white
+        text-transform: none
+        font-weight: variables.$font-normal
+
 .redes
     display: flex
     flex-direction: column
-
+    margin: 0 auto
     align-items: center
 
     h3
         font-weight: variables.$font-bold
         color: variables.$bg-color-primary
+        margin: 10px 0
     ul
         display: flex
-
         list-style: none
+        gap: 10px
 
         li
             height: 54px
@@ -38,7 +51,9 @@
             gap: px
 
             text-indent: -9999px
-
+            &.blog
+                background-repeat: no-repeat
+                background-image: url('@images/blog.svg')
             &.facebook
                 background-repeat: no-repeat
                 background-image: url('@images/facebook.svg')
