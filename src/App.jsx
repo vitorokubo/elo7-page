@@ -1,8 +1,9 @@
+import '@styles/components/App.sass'
 import HeroBanner from '@pages/herobanner'
 import TeamSection from '@pages/teamsection'
-import '@styles/components/App.sass'
 import AboutUs from '@pages/aboutus'
 import Jobs from '@pages/jobpositions'
+import Footer from '@pages/footer'
 
 function App() {
     return (
@@ -15,7 +16,9 @@ function App() {
                 <AboutUs />
                 <Jobs />
             </main>
-            <footer></footer>
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     )
 }

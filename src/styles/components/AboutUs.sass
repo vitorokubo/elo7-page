@@ -2,5 +2,43 @@
 @use '../breakpoints'
 @use '../variables'
 
-.AbautUs
+.aboutUs
+    width: 100%
     display: flex
+    flex-direction: column
+    justify-content: space-evenly
+      
+    .cardsSection
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        gap:10px
+
+        .card
+            min-height: 400px
+            width: 280px 
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+            h3
+                margin: 10px
+                text-align: center
+        
+        .cardText
+
+            p   
+                text-align: justify
+                text-justify: inter-word
+
+    .link
+
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center 
+        margin-top: 30px
+    
+

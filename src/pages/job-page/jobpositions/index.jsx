@@ -44,7 +44,7 @@ export default function JobPositions() {
         }
 
         return (
-            <div class="Position">
+            <div className="position">
                 <a href={link}>{position}</a>
                 <div>
                     <p>{location ? locationToRender : 'Remoto'}</p>
@@ -81,7 +81,7 @@ export default function JobPositions() {
             return null
         }
         return jobs.length ? (
-            <div className="PositionsList">
+            <div className="positionsList">
                 {jobs &&
                     jobs.map(({ link, localizacao, cargo }) => (
                         <Job
@@ -98,9 +98,9 @@ export default function JobPositions() {
     }
 
     return (
-        <section className="Jobs">
+        <section className="jobsSection">
             <img src={Vagas} />
-            <h2>Vagas disponíveis</h2>
+            <h2>Vagas em Aberto</h2>
             {renderLoading()}
             {renderError()}
             <JobsList jobs={jobs} />

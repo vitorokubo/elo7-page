@@ -28,10 +28,10 @@ const CardList = [
 function Card({ title, description, img }) {
     return (
         <article className="card">
-            <div className="cardImageTitle">
+            
                 <img src={img} />
-                <h2>{title}</h2>
-            </div>
+                <h3>{title}</h3>
+            
             <div className="cardText">
                 <p>{description}</p>
             </div>
@@ -41,8 +41,8 @@ function Card({ title, description, img }) {
 
 export default function AboutUs() {
     return (
-        <section className="AboutUs">
-            <div className="CardsSection">
+        <section className="aboutUs">
+            <div className="cardsSection">
                 {CardList.map(card => {
                     return <Card {...card} />
                 })}

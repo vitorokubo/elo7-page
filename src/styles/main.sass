@@ -20,14 +20,10 @@ html
 body
     width: 100vw
 
-main
-    display: flex
-    flex-direction: column
-    max-width: 960px
-    margin: 0 auto
-
 img
-    height: 100%
+    max-width:100%
+    align-self: center
+    object-fit: cover
 
 h1
     font-size: mixins.rem(44px)
@@ -35,7 +31,13 @@ h1
     color: variables.$h1-color
 
 h2
-    font-size: mixins.rem(24px)
+    font-size: mixins.rem(20px)
+    font-weight: 900
+    color: variables.$text-color
+    text-transform: uppercase
+
+h3
+    font-size: mixins.rem(18px)
     font-weight: 700
     color: variables.$text-color
     text-transform: uppercase
@@ -45,18 +47,17 @@ p
 
 a
     text-transform: uppercase
+    font-size: mixins.rem(18px)
     font-weight: variables.$font-bold
     color: variables.$elo7-color-green
     text-decoration: none
+    margin: 10px
 
 hr
-
     width: 200px
-    height: 1px
+    height: 3px
     min-width: 100px
     background: #cfcfcf
     border: none
 
-section
 
-    min-height: 620px
