@@ -1,4 +1,4 @@
-import '@components/TeamSection.sass'
+import '@styles/components/TeamSection.sass'
 import placeholder_video from '@images/placeholder-video.png'
 import beatriz from '@images/beatriz.png'
 import camila from '@images/camila.png'

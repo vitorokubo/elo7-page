@@ -1,10 +1,10 @@
 @use 'variables'
+@use 'mixins'
 
 :root
-    /*font-size 1rem = 10px para font-size 62.5%*/
-    font-size: 62.5%
+    font-size: variables.$font-size
     line-height: 24px
-    font-weight: 400
+    font-weight: variables.$font-normal
 
 *
     padding: 0px
@@ -19,34 +19,44 @@ html
 
 body
     width: 100vw
-    text-align: center
 
 main
     display: flex
     flex-direction: column
+    max-width: 960px
+    margin: 0 auto
 
 img
-    display: block
-    height: auto
-    padding: 1rem
+    height: 100%
 
 h1
-    font-size: 6rem
+    font-size: mixins.rem(44px)
+    font-weight: variables.$font-bold
     color: variables.$h1-color
 
 h2
-    font-size: 2.4rem
+    font-size: mixins.rem(24px)
     font-weight: 700
     color: variables.$text-color
     text-transform: uppercase
 
 p
-    font-size: 2rem
-    font-weight: 400
     color: variables.$text-color
 
 a
     text-transform: uppercase
-    padding: 1rem
-    border-top: 1px solid #cbcbcb
-    color: #389da0
+    font-weight: variables.$font-bold
+    color: variables.$elo7-color-green
+    text-decoration: none
+
+hr
+
+    width: 200px
+    height: 1px
+    min-width: 100px
+    background: #cfcfcf
+    border: none
+
+section
+
+    min-height: 620px

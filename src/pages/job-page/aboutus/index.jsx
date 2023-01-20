@@ -2,7 +2,7 @@ import Smile from '@images/qualidade.png'
 import Palette from '@images/atividades.png'
 import Metal from '@images/descontracao.png'
 
-import '@components/AboutUs.sass'
+import '@styles/components/AboutUs.sass'
 
 const CardList = [
     {
@@ -27,10 +27,14 @@ const CardList = [
 
 function Card({ title, description, img }) {
     return (
-        <article className="Card">
-            <img src={img} />
-            <h2>{title}</h2>
-            <p>{description}</p>
+        <article className="card">
+            <div className="cardImageTitle">
+                <img src={img} />
+                <h2>{title}</h2>
+            </div>
+            <div className="cardText">
+                <p>{description}</p>
+            </div>
         </article>
     )
 }
@@ -43,7 +47,8 @@ export default function AboutUs() {
                     return <Card {...card} />
                 })}
             </div>
-            <div>
+            <div className="link">
+                <hr />
                 <a>Saiba mais</a>
             </div>
         </section>

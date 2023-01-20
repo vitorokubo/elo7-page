@@ -1,8 +1,8 @@
 import HeroBanner from '@pages/herobanner'
 import TeamSection from '@pages/teamsection'
-import './styles/components/App.sass'
+import '@styles/components/App.sass'
 import AboutUs from '@pages/aboutus'
-import Jobs from '@pages/jobvacancies'
+import Jobs from '@pages/jobpositions'
 
 function App() {
     return (

@@ -1,11 +1,12 @@
-/*cor de fundo na margem toda*/
+@use '../mixins'
+@use '../breakpoints'
+@use '../variables'
 
 .TeamSection
     display: flex
     flex-direction: column
     gap: 5rem
     background-color: #f8f8f8f8
-    padding: 5rem
 
 .CeoContent
     display: flex
@@ -26,9 +27,10 @@
 .TeamMembers
     display: flex
     flex-direction: column
-    gap: 5rem
+    gap: 10px
 
 .TeamPhoto
     display: flex
-    justify-content: space-evenly
+    gap: 15px
+    justify-content: center
     flex-wrap: wrap
