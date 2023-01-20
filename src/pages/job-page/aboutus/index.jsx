@@ -9,29 +9,29 @@ const CardList = [
         img: Smile,
         title: 'Qualidade de Vida',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam placeat ducimus ad nisi illum, repellendus dolor nemo? Quos eveniet nobis libero molestiae! Enim optio reiciendis corrupti reprehenderit illum distinctio!'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ex, at malesuada ligula. Pellentesque odio ipsum.'
     },
     {
         img: Palette,
         title: 'Ambiente Descontraído',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam placeat ducimus ad nisi illum, repellendus dolor nemo? Quos eveniet nobis libero molestiae! Enim optio reiciendis corrupti reprehenderit illum distinctio!'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ex, at malesuada ligula. Pellentesque odio ipsum, viverra a eros sit amet, fringilla sagittis augue. Fusce risus tellus, tempus quis lacinia in, vehicula ut turpis.'
     },
     {
         img: Metal,
         title: 'Atividades Extras',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam placeat ducimus ad nisi illum, repellendus dolor nemo? Quos eveniet nobis libero molestiae! Enim optio reiciendis corrupti reprehenderit illum distinctio!'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ex, at malesuada ligula. Pellentesque odio ipsum, viverra a eros sit amet, fringilla sagittis augue. Fusce risus tellus.'
     }
 ]
 
 function Card({ title, description, img }) {
     return (
         <article className="card">
-            
+            <div className="cardImageTitle">
                 <img src={img} />
                 <h3>{title}</h3>
-            
+            </div>
             <div className="cardText">
                 <p>{description}</p>
             </div>
@@ -41,7 +41,7 @@ function Card({ title, description, img }) {
 
 export default function AboutUs() {
     return (
-        <section className="aboutUs">
+        <section id="sobre" className="aboutUs">
             <div className="cardsSection">
                 {CardList.map(card => {
                     return <Card {...card} />
@@ -49,7 +49,7 @@ export default function AboutUs() {
             </div>
             <div className="link">
                 <hr />
-                <a>Saiba mais</a>
+                <a href="_blank">Saiba mais »</a>
             </div>
         </section>
     )

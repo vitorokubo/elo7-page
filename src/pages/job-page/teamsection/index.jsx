@@ -7,15 +7,14 @@ import guto from '@images/guto.png'
 
 export default function TeamSection() {
     return (
-        <section className="teamSection">
+        <section id="team" className="teamSection">
             <div className="ceoContent">
-                
-                    <img
-                        className="placeholderVideo"
-                        src={placeholder_video}
-                        alt='Video do Ceo Carlos Curioni'
-                    />
-            
+                <img
+                    className="placeholderVideo"
+                    src={placeholder_video}
+                    alt="Video do Ceo Carlos Curioni"
+                />
+
                 <div className="quote">
                     <div className="ceoName">
                         <h2>Palavra do Ceo</h2>
@@ -32,12 +31,16 @@ export default function TeamSection() {
                     </div>
                 </div>
             </div>
-            <h2 className='h2Team'>Conheça Nosso Time<br/>Fora De Série</h2>
+            <h2 className="h2Team">
+                Conheça Nosso Time
+                <br />
+                Fora De Série
+            </h2>
             <div className="teamPhoto">
-                    <img src={camila} />
-                    <img src={guto} />
-                    <img src={david} />
-                    <img src={beatriz} />
+                <img src={camila} />
+                <img src={guto} />
+                <img src={david} />
+                <img src={beatriz} />
             </div>
         </section>
     )

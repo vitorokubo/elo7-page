@@ -98,7 +98,7 @@ export default function JobPositions() {
     }
 
     return (
-        <section className="jobsSection">
+        <section id="vagas" className="jobsSection">
             <img src={Vagas} />
             <h2>Vagas em Aberto</h2>
             {renderLoading()}
