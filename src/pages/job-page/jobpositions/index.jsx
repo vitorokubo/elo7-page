@@ -16,7 +16,7 @@ export default function JobPositions() {
         try {
             setLoading(true)
             const response = await fetch(
-                `http://www.mocky.io/v2/5d6fb6b1310000f89166087b`
+                `https://www.mocky.io/v2/5d6fb6b1310000f89166087b`
             )
             if (response.status == '200') {
                 let jobs = await response.json()
@@ -76,7 +76,6 @@ export default function JobPositions() {
     }
 
     const JobsList = ({ jobs }) => {
-        console.log(error, loading)
         if (error || loading) {
             return null
         }
