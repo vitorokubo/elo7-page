@@ -12,13 +12,13 @@ const CardList = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ex, at malesuada ligula. Pellentesque odio ipsum.'
     },
     {
-        img: Palette,
+        img: Metal,
         title: 'Ambiente Descontraído',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ex, at malesuada ligula. Pellentesque odio ipsum, viverra a eros sit amet, fringilla sagittis augue. Fusce risus tellus, tempus quis lacinia in, vehicula ut turpis.'
     },
     {
-        img: Metal,
+        img: Palette,
         title: 'Atividades Extras',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ex, at malesuada ligula. Pellentesque odio ipsum, viverra a eros sit amet, fringilla sagittis augue. Fusce risus tellus.'
