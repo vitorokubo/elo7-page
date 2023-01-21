@@ -88,7 +88,7 @@ export default function JobPositions() {
                             link={link}
                             location={localizacao}
                             position={cargo}
-                            key={''}
+                            key={Date.now() + Math.random()}
                         />
                     ))}
             </div>

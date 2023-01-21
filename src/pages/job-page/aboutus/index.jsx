@@ -44,7 +44,7 @@ export default function AboutUs() {
         <section id="sobre" className="aboutUs">
             <div className="cardsSection">
                 {CardList.map(card => {
-                    return <Card {...card} />
+                    return <Card {...card} key={card.title} />
                 })}
             </div>
             <div className="link">
