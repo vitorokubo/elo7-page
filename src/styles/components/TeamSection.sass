@@ -1,6 +1,6 @@
-@use '../mixins'
-@use '../breakpoints'
-@use '../variables'
+@use '@styles/mixins'
+@use '@styles/breakpoints' as *
+@use '@styles/variables'
 
 .teamSection
     display: flex
@@ -8,39 +8,43 @@
     justify-content: space-between
     background-color: #f8f8f8f8
 
-    .ceoContent
+.ceoContent
+    display: flex
+    gap: 20px
+    flex-direction: column
+    img
+        width: 100%
+    @include md
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+    .quote
         display: flex
-        justify-content: space-between
-        flex-wrap: wrap
+        flex-direction: column
+        text-align: left
+        gap: 20px
+        @include md
+            gap: 30px
+        p
+            text-align: justify
+            text-justify: inter-word
 
-        .quote
-            width: 50%
-            display: flex
-            flex-direction: column
-            text-align: left
-            gap:30px
-            p
-                text-align: justify
-                text-justify: inter-word
-            
-            .name
-                margin-top: 3px
-                color: variables.$elo7-color-yellow
-                font-style: italic
-                font-size: mixins.rem(20px)
+        .name
+            margin-top: 3px
+            color: variables.$elo7-color-yellow
+            font-style: italic
+            font-size: mixins.rem(20px)
 
-        .teamMembers
-            display: flex
-            flex-direction: column
+.h2Team
+    margin-block: 10px
+    text-align: center
 
-    .h2Team
+.teamPhoto
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 10px
+    img
         margin-block: 10px
-        text-align: center
-
-    .teamPhoto
-        display: flex
+    @include md
         justify-content: space-between
-        flex-wrap: wrap
-        gap:10px
-        img
-            margin-block: 10px

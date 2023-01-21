@@ -1,6 +1,6 @@
-@use '../mixins'
-@use '../breakpoints'
-@use '../variables'
+@use '@styles/mixins'
+@use '@styles/breakpoints' as *
+@use '@styles/variables' 
 
 .aboutUs
     width: 100%
@@ -11,10 +11,12 @@
 .cardsSection
     display: flex
     flex-direction: row
-    justify-content: space-between
+    justify-content: center
     align-items: center
     flex-wrap: wrap
     gap: 10px
+    @include md
+        justify-content: space-between
 
 .card
     min-height: 400px
