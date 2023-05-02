@@ -1,40 +1,40 @@
 # Elo7 - Job Page
 
-O seguinte projeto foi elaborado como proposto pelo [Desafio de Programação Elo7](https://gist.github.com/elo7-developer/33a0844a9ac6953dd3e5). O projeto consiste em uma landing page que consulta informações via API e expõe as vagas em aberto. O projeto pode ser consultado em produção neste [link](https://elo7-page.onrender.com/ 'https://elo7-page.onrender.com/').
+The following project was developed as proposed by the [Elo7 Programming Challenge](https://gist.github.com/elo7-developer/33a0844a9ac6953dd3e5). The project consists of a landing page that queries information via API and displays open positions. The project can be viewed in production at this [link](https://elo7-page.onrender.com/ 'https://elo7-page.onrender.com/').
 
-## Tecnologias utilizadas e justificativas
+## Technologies Used and Justifications
 
-|      Abrangência       | Utilizado  |
-| :--------------------: | ---------- |
-|       Linguagem        | Javascript |
-|         Estilo         | SASS       |
-|       Requisição       | Fetch      |
-| _Framework (opcional)_ | React      |
+|       Scope       | Used       |
+| :---------------: | ---------- |
+|      Language     | Javascript |
+|       Style       | SASS       |
+|     Requesting     | Fetch      |
+| _Framework (opt)_ | React      |
 
-O framework escolhido para o projeto foi o React.js, pois permite entregar aplicações rápidas, com alto desempenho e criar componentes reutilizáveis. Além disso, permite uma melhor organização do código e uma melhor escalabilidade.
-Foi utilizado SASS para estilização pois oferece uma gama de funcionalidades a mais que o CSS e permite uma maior organização e manutenção do código.
-A requisição foi feita através de fetch, por ser nativo e por ser proposto no desafio.
+The framework chosen for the project was React.js, as it allows for quick application delivery, high performance, and the creation of reusable components. Additionally, it enables better code organization and scalability.
+SASS was used for styling because it offers a range of additional functionalities than CSS and allows for better organization and maintenance of the code.
+The request was made through fetch, because it is native and was proposed in the challenge.
 
-## Como Roda a Aplicação
+## Running the Application
 
-### Requisitos
+### Requirements
 
--   Node.js 16.16.0
+- Node.js 16.16.0
 
 ### `yarn install`
 
-No diretório da aplicação rode o seguinte comando acima para instalar as dependências
+In the application directory, run the above command to install dependencies.
 
 ### `yarn dev`
 
-E o comando acima para rodar a aplicação na URL http://127.0.0.1:5173/
+And the above command to run the application at URL http://127.0.0.1:5173/
 
-## Algumas melhorias aplicadas
+## Some Applied Improvements
 
-Foi elaborado um footer para o layout, e foram adicionados alguns textos referentes ao Elo7 :). Foi utilizado o render para auto deploy, assim as mudanças são refletidas no link de produção.
+A footer was developed for the layout, and some texts referring to Elo7 were added :). Render was used for auto-deploy, so changes are reflected in the production link.
 
-## Melhorias propostas
+## Proposed Improvements
 
 <ol>
-<li> Proponho que seja adicionado IDs únicas para as informações consultadas na API para serem usadas como key.
-<li> Outra sugestão seria adicionar a categoria das vagas consultadas na API.
+<li> I suggest adding unique IDs to the API-fetched information to be used as keys.
+<li> Another suggestion would be to add the category of the positions queried in the API.
